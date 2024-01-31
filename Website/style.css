@@ -1,0 +1,154 @@
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    border: 10px solid #000;
+    padding: 20px;
+    background-image: url('./Title .png');
+    background-size: cover; /* Ensures the background image covers the entire body */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+  
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+@font-face {
+    font-family: 'Copperplate';
+    src: url('path/to/copperplate.woff') format('woff');
+    /* Add more font formats as needed (e.g., woff2, ttf) */
+  }
+  
+  
+  h1 {
+    font-size: 4em;
+    margin-top: 25px;
+    margin-inline-start: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif; /* Replace 'YourFont' with your font */
+    letter-spacing: -1px; /* Adjust the value as needed */
+}
+
+
+
+h2.ml8 {
+    font-weight: 900;
+    font-size: 4.5em;
+    color: rgb(3, 0, 0);
+    width: 3em;
+    height: 3em;
+    position: relative;
+}
+
+.ml8 .letters {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 1em;
+}
+
+.ml8 .letters-left {
+    position: relative;
+    z-index: 2;
+    top: 40px;
+    display: inline-flex;
+    line-height: 1em;
+    left: -35px;
+}
+
+.ml8 .bang {
+    font-size: 1.4em;
+    top: 265px;
+    left: 2em;
+    z-index: 2;
+}
+
+.ml8 .circle {
+    position: absolute;
+    left: 40;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.ml8 .circle-white {
+    width: 3em;
+    height: 3em;
+    border: 2px dashed #7b01cc;
+    border-radius: 2em;
+}
+
+.ml8 .circle-dark {
+    width: 4.2em;
+    height: 4.2em;
+    background-color: #2b8fd4;
+    border-radius: 2em;
+    z-index: 1;
+    opacity: 0.75;
+}
+
+.ml8 .circle-dark-dashed {
+    background: repeating-linear-gradient(to right, #0a42db, #0a42db 5px, transparent 5px, transparent 10px);
+    width: 4.2em;
+    height: 4.2em;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+/* Add this style for the button container */
+.button-container {
+    position: fixed;
+    bottom: 40px; /* Adjust the distance from the bottom as needed */
+    right: 40px; /* Adjust the distance from the right as needed */
+    display: flex;
+    align-items: center;
+}
+
+/* Add this style for the round button */
+.round-button {
+    font-size: 1.5em; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    border-radius: 20px; /* Set round edges */
+    background-color: #2b8fd4; /* Set button color */
+    color: rgb(0, 0, 0); /* Set text color */
+    cursor: pointer;
+    border: 2px solid #000; /* Add a 2px black solid border */
+    margin-right: 10px; /* Adjust the margin between the button and other elements */
+    box-shadow: 0 0 0 4px rgb(0, 0, 0); /* Add a white box shadow to create an additional border */
+    transition: opacity 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions for opacity and box shadow */
+    opacity: 0.15; /* Set default opacity to make the button slightly transparent */
+}
+
+.round-button:hover {
+    opacity: 1; /* Change opacity on hover to make the button fully visible */
+    box-shadow: 0 0 0 4px rgb(0, 0, 0); /* Adjust box shadow on hover for consistent border visibility */
+}
